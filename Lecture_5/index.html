@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myFirstApp">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="angular.min.js"></script>
+    <script src="App.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 5</title>
+  </head>
+  <body>
+    <h1>My First Angular Js App</h1>
+    <div ng-controller="myFirstController">
+        {{name}} 
+        <br>
+        {{sayHello()}}
+        <br>
+
+        <!-- The value that we enter to text box realtime share with name scope variable -->
+        <input type="text" ng-model = "name">
+        <br>
+
+        <!-- name is now real time update is values -->
+        Inside the input is : {{name}}
+    </div>
+  </body>
+</html>

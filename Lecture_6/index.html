@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nameCalculator">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="angular.min.js"></script>
+    <script src="App.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 6</title>
+  </head>
+  <body>
+    <div ng-controller="nameCalculatorController">
+      <!-- ng-model ="scope variable name" do binding part -->
+      <div>
+        Enter Name :
+        <input
+          type="text"
+          name="name"
+          ng-model="name"
+          ng-keyUp="displayNumeric();"
+        />
+      </div>
+      <div>Total Value of name : {{totalValue}}</div>
+    </div>
+  </body>
+</html>
