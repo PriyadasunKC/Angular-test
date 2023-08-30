@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dependencyDemo">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="angular.min.js"></script>
+    <script src="App.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dependency Injection lecture 7</title>
+  </head>
+  <body>
+      <h1>Dependency Injection in Js and Angular Js</h1>
+      <div ng-controller="dependencyDemoController">
+        <input type="text" 
+                ng-model="name" 
+                ng-blur = "upper();"
+        /> <!-- ng-blur = when loose the focus from text box this detects it -->
+      </div>
+  </body>
+</html>

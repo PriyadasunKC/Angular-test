@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ExpressionAndInterpolationDemo">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="angular.min.js"></script>
+    <script src="App.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expressions and Interpolation Demo</title>
+  </head>
+  <body>
+    <h1>Expressions and <br>
+        Interpolation
+    </h1>
+    <div ng-controller="ExpressionAndInterpolationDemoController">
+    
+        {{name}} has a message : <br>
+       
+        {{giveMessage()}}
+      <!--
+                {{Expressions}}
+                
+                These executed in the context of the $scope
+                Does not throw errors if in resulting type errors or reference errors
+                Inside this control flow expressions not allowed ex if--else
+                accept filer of filer chain to format the output
+
+
+                Interpolation
+                
+                evaluations string literals and identifying place holders and 
+                assign values to that place holders which are replace with values
+
+                message is {{message}}
+
+                // we can pass values to replace the message.
+            -->
+    
+            <div>
+                <button ng-click = "feedChathura()">{{buttonName}}</button>
+                <br>
+                <!--Whn put src attribute the console shows the 404 error because html cannot interpret below code.
+                only after angular replace the palce holder with value then only understand to the html.
+                so, instead of src we use ng-src to avoid this error
+                -->
+                <img ng-src="ChathuraNeed_{{StateOfNeed}}.jpg" alt="Dollars">
+            </div>
+        </div>
+
+    
+  </body>
+</html>
